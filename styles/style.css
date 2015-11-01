@@ -46,22 +46,36 @@ body {
   background-color: white; }
 
 header {
-  width: 100%;
-  height: 100px;
-  background-color: rgba(255, 0, 0, 0.1); }
+  padding: 50px; }
+
+.logo {
+  float: left; }
+
+nav {
+  float: right;
+  font-family: "Geomanist-Medium", "Helvetica", "Arial", sans-serif;
+  font-size: 15px; }
+
+nav li {
+  display: inline;
+  padding-left: 25px; }
 
 article {
   display: inline-block;
   float: left;
-  width: 33.3%;
-  height: 70%;
+  width: 33.33%;
+  height: 75%;
+  min-height: 300px;
+  /*Background properties*/
   background-image: url(images/test.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: luminosity;
   background-color: black;
+  /*Shadow inner border*/
   box-shadow: inset 0 0 0 0px rgba(255, 255, 255, 0.5);
+  /*Transition properties*/
   transition-property: box-shadow, background-color;
   transition-duration: 0.2s, 0.5s;
   transition-timing-function: linear; }
@@ -69,5 +83,12 @@ article {
 article:hover {
   box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.5);
   background-color: transparent; }
+
+@media all and (max-width: 1200px) {
+  article {
+    width: 50%; } }
+@media all and (max-width: 800px) {
+  article {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
