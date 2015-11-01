@@ -59,14 +59,14 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 255, 0.1);
+  background-blend-mode: luminosity;
+  background-color: black;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border: 0px solid red;
   transition-property: border, background-color;
-  transition-duration: 0.1s, 0.2s;
+  transition-duration: 0.1s, 0.5s;
   transition-timing-function: linear; }
 
 article:hover {
@@ -74,6 +74,6 @@ article:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border: 10px solid red;
-  background-color: rgba(0, 0, 255, 0.3); }
+  background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
