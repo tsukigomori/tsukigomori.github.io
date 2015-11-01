@@ -46,26 +46,34 @@ body {
   background-color: white; }
 
 header {
-  padding: 50px; }
+  padding: 50px;
+  overflow: hidden; }
 
 .logo {
   float: left; }
 
 nav {
   float: right;
-  font-family: "Geomanist-Medium", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 15px; }
 
 nav li {
   display: inline;
-  padding-left: 25px; }
+  padding-left: 25px;
+  color: black;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear; }
+
+nav li:hover {
+  color: rgba(0, 90, 255, 0.5); }
 
 article {
   display: inline-block;
   float: left;
   width: 33.33%;
   height: 75%;
-  min-height: 300px;
+  min-height: 500px;
   /*Background properties*/
   background-image: url(images/test.jpg);
   background-repeat: no-repeat;
