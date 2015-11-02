@@ -63,7 +63,7 @@ article:hover{
     width: 100%;
   }
 }
-@media only handheld and (orientation:portrait){
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation:portrait){
   .logo{
     float: none;
     font-size: 80px;
@@ -79,7 +79,7 @@ article:hover{
     width: 100%;
   }
 }
-@media only handheld and (orientation:landscape){
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation:landscape){
   .logo{
     font-size: 25px;
   }
