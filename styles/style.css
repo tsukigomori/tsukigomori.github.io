@@ -95,10 +95,7 @@ article:hover {
 @media all and (max-width: 1200px) {
   article {
     width: 50%; } }
-@media all and (max-width: 800px) {
-  article {
-    width: 100%; } }
-@media all and (orientation: portait) {
+@media all and (max-width: 800px), only screen and (orientation: portrait) {
   article {
     width: 100%; } }
 
