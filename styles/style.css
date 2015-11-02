@@ -43,7 +43,9 @@ html, body {
   height: 100%; }
 
 body {
-  background-color: white; }
+  background-color: white;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 15px; }
 
 header {
   padding: 50px;
@@ -53,9 +55,7 @@ header {
   float: left; }
 
 nav {
-  float: right;
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 15px; }
+  float: right; }
 
 nav li {
   display: inline;
@@ -96,6 +96,17 @@ article:hover {
   article {
     width: 50%; } }
 @media all and (max-width: 800px), only screen and (orientation: portrait) {
+  .logo {
+    float: none;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 40px; }
+
+  nav {
+    float: none;
+    text-align: center;
+    font-size: 25px; }
+
   article {
     width: 100%; } }
 
