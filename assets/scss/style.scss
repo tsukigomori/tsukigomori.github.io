@@ -79,3 +79,11 @@ article:hover{
     width: 100%;
   }
 }
+@media only screen and (orientation:landscape){
+  .logo{
+    font-size: 80px;
+  }
+  nav{
+    font-size: 40px;
+  }
+}

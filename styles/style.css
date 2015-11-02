@@ -112,5 +112,11 @@ article:hover {
 
   article {
     width: 100%; } }
+@media only screen and (orientation: landscape) {
+  .logo {
+    font-size: 80px; }
+
+  nav {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
