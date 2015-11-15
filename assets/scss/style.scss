@@ -136,10 +136,7 @@ p{
 }
 @media only screen and (max-device-width: 1000px) and (min-device-width: 320px) and (orientation:portrait){
   .logo{
-    float: none;
-    padding-bottom: 40px;
-    text-align: center;
-    margin-top: 0;
+    display: none;
   }
   .title{
     float: none;
@@ -159,12 +156,9 @@ p{
     width: 100%;
   }
 }
-@media only screen and (max-device-width: 800px) and (min-device-width: 320px) and (orientation:landscape){
+@media only screen and (max-device-width: 1000px) and (min-device-width: 320px) and (orientation:landscape){
   .logo{
-    float: none;
-    padding-bottom: 40px;
-    text-align: center;
-    margin-top: 0;
+    display: none;
   }
   .title{
     font-size: 25px;
