@@ -101,8 +101,24 @@ article:hover {
   background-color: transparent; }
 
 section {
-  width: 100%;
-  margin: 20px; }
+  width: auto;
+  margin: 0 30px;
+  min-height: 100%; }
+
+footer {
+  font-style: 15px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  padding: 30px;
+  padding-left: 50px; }
+
+/* ------text styles ------ */
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+p {
+  margin-bottom: 20px; }
 
 @media all and (max-width: 1200px) {
   .logo {
