@@ -1,4 +1,6 @@
 @import "reset.scss";
+/*--------------------website--------------------*/
+
 html, body{
   height: 100%;
 }
@@ -12,7 +14,14 @@ header{
   overflow:hidden;
 }
 .logo{
+  display: inline;
+  margin-top: -5px;
   float: left;
+  padding-right: 10px;
+}
+.title{
+  float: left;
+  padding-top: 0.5em;
 }
 nav{
   float: right;
@@ -26,7 +35,7 @@ nav li{
   transition-timing-function: linear;
 }
 nav li:hover{
-  color: rgba(0, 90, 255, 0.5);
+  color: rgba(0, 90, 255, 1);
 }
 article{
   display: inline-block;
@@ -54,17 +63,64 @@ article:hover{
 }
 
 @media all and (max-width: 1200px){
+  .logo{
+    float: none;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+  }
+  .title{
+    float: none;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  li:first-child{
+    padding: 0;
+  }
+  nav{
+    float: none;
+    text-align: center;
+  }
   article{
     width: 50%;
   }
 }
 @media all and (max-width: 800px){
+  .logo{
+    float: none;
+    padding: 0;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+  }
+  .title{
+    float: none;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  nav{
+    float: none;
+    text-align: center;
+  }
+  li:first-child{
+    padding: 0;
+  }
   article{
     width: 100%;
   }
 }
 @media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation:portrait){
   .logo{
+    float: none;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .title{
     float: none;
     font-size: 80px;
     text-align: center;
@@ -75,15 +131,27 @@ article:hover{
     text-align: center;
     font-size: 40px;
   }
+  li:first-child{
+    padding: 0;
+  }
   article{
     width: 100%;
   }
 }
 @media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation:landscape){
   .logo{
+    float: none;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .title{
     font-size: 25px;
   }
   nav{
     font-size: 25px;
+  }
+  li:first-child{
+    padding: 0;
   }
 }
