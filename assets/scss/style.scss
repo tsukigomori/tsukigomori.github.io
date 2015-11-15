@@ -137,6 +137,10 @@ article:hover{
   article{
     width: 100%;
   }
+  section{
+    width: 100%;
+    margin: 20px;
+  }
 }
 @media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation:landscape){
   .logo{

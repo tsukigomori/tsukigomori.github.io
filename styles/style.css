@@ -169,7 +169,11 @@ article:hover {
     padding: 0; }
 
   article {
-    width: 100%; } }
+    width: 100%; }
+
+  section {
+    width: 100%;
+    margin: 20px; } }
 @media only screen and (max-device-width: 480px) and (min-device-width: 320px) and (orientation: landscape) {
   .logo {
     float: none;
