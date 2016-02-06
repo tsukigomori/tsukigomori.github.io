@@ -1,172 +1,103 @@
 @import "reset.scss";
-/*--------------------website--------------------*/
+@import "toast.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,latin-ext);
 
-html, body{
-  height: 100%;
+:root{
+  font-size: 16px;
 }
+
 body{
- background-color: white;
- font-family: "Helvetica", "Arial", sans-serif;
- font-size: 15px;
+  background-color: white;
+  font-family: 'Open Sans', "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
 }
 header{
-  padding: 50px;
-  overflow:hidden;
+  text-transform: uppercase;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 66px;
+  margin-bottom: 100px;
+  max-width: 800px;
+  width: 100%;
 }
-.logo{
-  display: inline;
-  margin-top: -5px;
-  float: left;
-  padding-right: 10px;
+main{
+  padding: 0 10px;
 }
 .title{
-  float: left;
-  padding-top: 0.5em;
+  color: #2a363b;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 30px;
 }
+/*Menu*/
 nav{
-  float: right;
+  padding-top: 26px;
 }
 nav li{
-  display: inline;
-  padding-left: 25px;
-  color: rgba(0, 0, 0, 1);
-  transition-property: color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-}
-nav li:hover{
-  color: rgba(0, 90, 255, 1);
-}
-article{
-  display: inline-block;
   float: left;
-  width: 33.33%;
-  height: 75%;
+  padding-right: 30px;
+}
+nav li:last-child{
+  padding-right: 0px;
+}
+nav li a{
+  color: rgba(42, 54, 59, 0.7);
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 20 px;
+  transition: color 0.2s linear;
+}
+nav li a:hover{
+  color: rgba(42, 54, 59, 1);
+}
+  /*Article style*/
+article a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  text-align: right;
+  height: 75vh;
   min-height: 500px;
+
+  /*Text*/
+  color: rgba(255, 255, 255, 0);
+
   /*Background properties*/
   background-image: url(images/test.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-blend-mode: luminosity;
   background-color: rgba(0, 0, 0, 1);
-  /*Shadow inner border*/
-  box-shadow: inset 0 0 0 0px rgba(255, 255, 255, 0.5);
-  /*Transition properties*/
-  transition-property: box-shadow, background-color;
-  transition-duration: 0.2s, 0.5s;
-  transition-timing-function: linear;
-}
-article:hover{
-  box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.5);
-  background-color: rgba(0, 0, 0, 0);
-}
-section{
-  width: auto;
-  margin: 0 30px;
-  min-height: 100%;
-}
-footer{
-  display: inline-block;
-  float: left;
-  font-style: 15px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  padding: 30px 50px;
-}
-/* ------text styles ------ */
-h1{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-p{
-  margin-bottom: 20px;
-}
+  box-shadow: inset 0px -100vh 0px 0px rgba(0,0,0,0);
 
-@media all and (max-width: 1200px){
-  .logo{
-    float: none;
-    padding-bottom: 30px;
-    display: block;
-    text-align: center;
-  }
-  .title{
-    float: none;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 40px;
-    font-size: 30px;
-  }
-  li:first-child{
-    padding: 0;
-  }
-  nav{
-    float: none;
-    text-align: center;
-  }
-  article{
-    width: 50%;
-  }
+  /*Transition properties*/
+  transition-property: box-shadow, color;
+  transition-duration: 0.2s, 0.4s;
+  transition-timing-function: linear, ease-out;
 }
-@media all and (max-width: 800px){
-  .logo{
-    float: none;
-    padding: 0;
-    padding-bottom: 30px;
-    display: block;
-    text-align: center;
-  }
-  .title{
-    float: none;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 40px;
-    font-size: 30px;
-  }
-  nav{
-    float: none;
-    text-align: center;
-  }
-  li:first-child{
-    padding: 0;
-  }
-  article{
-    width: 100%;
-  }
+/*Article animation*/
+article a:hover{
+  box-shadow: inset 0px -100vh 0px 0px rgba(0,0,0,0.8);
+  color: rgba(255, 255, 255, 1);
 }
-@media only screen and (max-device-width: 1000px) and (min-device-width: 320px) and (orientation:portrait){
-  .logo{
-    display: none;
-  }
-  .title{
-    float: none;
-    font-size: 80px;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  nav{
-    float: none;
-    text-align: center;
-    font-size: 40px;
-  }
-  li:first-child{
-    padding: 0;
-  }
-  article{
-    width: 100%;
-  }
+.article-title{
+  font-size: 4rem;
+  z-index: 2;
 }
-@media only screen and (max-device-width: 1000px) and (min-device-width: 320px) and (orientation:landscape){
-  .logo{
-    display: none;
-  }
-  .title{
-    font-size: 25px;
-  }
-  nav{
-    font-size: 25px;
-  }
-  li:first-child{
-    padding: 0;
+/*Footer*/
+footer{
+  text-align: center;
+  padding: 60px;
+  color: rgba(42, 54, 59, 0.7);
+  font-weight: 400;
+  font-size: 1rem;
+}
+@media (max-width: $toast-breakpoint-small){
+  header{
+    text-align: center;
   }
 }
