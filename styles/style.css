@@ -369,5 +369,20 @@ footer {
 @media (max-width: 1200px) and (min-width: 800px) {
   header {
     padding: 0 20px; } }
+@media only screen and (max-device-width: 1000px) and (min-device-width: 320px) and (orientation: portrait) {
+  .toggle {
+    display: block; }
+
+  .side-menu {
+    display: block; }
+
+  header nav {
+    display: none; }
+
+  header {
+    text-align: center; } }
+@media only screen and (max-device-width: 1000px) and (min-device-width: 320px) and (orientation: landscape) {
+  header {
+    padding: 0 20px; } }
 
 /*# sourceMappingURL=style.css.map */
