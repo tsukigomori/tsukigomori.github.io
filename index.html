@@ -6,35 +6,52 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <div class="title">Przemysław Chojka</div>
-    <nav>
-      <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">O mnie</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="grid grid--no-gutter">
-        <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
-          <div class="article-title">Test</div>
-        </a></article>
-        <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
-          <div class="article-title">Test</div>
-        </a></article>
-        <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
-          <div class="article-title">Test</div>
-        </a></article>
-        <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
-          <div class="article-title">Test</div>
-        </a></article>
+  <input type="checkbox" id="sidebartoggler">
+  <div class="wraper">
+    <label for="sidebartoggler" class="toggle">☰</label>
+    <div class="side-menu">
+      <nav>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">O mnie</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <label for="sidebartoggler" class="cross">✖</label>
     </div>
-  </main>
-  <footer>
-    © 2015 Tsukigomori
-  </footer>
+    <div class="page">
+      <header>
+        <div class="title">Przemysław Chojka</div>
+        <nav>
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">O mnie</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="grid grid--no-gutter">
+            <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
+              <div class="article-title">Test</div>
+            </a></article>
+            <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
+              <div class="article-title">Test</div>
+            </a></article>
+            <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
+              <div class="article-title">Test</div>
+            </a></article>
+            <article class="grid__col grid__col--1-of-3 grid__col--m-1-of-2"><a href="#">
+              <div class="article-title">Test</div>
+            </a></article>
+        </div>
+      </main>
+      <footer>
+        © 2015 Tsukigomori
+      </footer>
+    </div>
+  </div>
 </body>
 </html>

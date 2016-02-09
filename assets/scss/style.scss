@@ -5,7 +5,9 @@
 :root{
   font-size: 16px;
 }
-
+.wraper{
+  z-index: 1;
+}
 body{
   background-color: white;
   font-family: 'Open Sans', "Helvetica", "Arial", sans-serif;
@@ -31,24 +33,24 @@ main{
   font-size: 30px;
 }
 /*Menu*/
-nav{
+header nav{
   padding-top: 26px;
 }
-nav li{
+header nav li{
   float: left;
   padding-right: 30px;
 }
-nav li:last-child{
+header nav li:last-child{
   padding-right: 0px;
 }
-nav li a{
+header nav li a{
   color: rgba(42, 54, 59, 0.7);
   font-weight: 500;
   line-height: 30px;
   font-size: 20 px;
   transition: color 0.2s linear;
 }
-nav li a:hover{
+header nav li a:hover{
   color: rgba(42, 54, 59, 1);
 }
   /*Article style*/
@@ -72,7 +74,7 @@ article a{
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 1);
-  box-shadow: inset 0px -100vh 0px 0px rgba(0,0,0,0);
+  box-shadow: inset 0px -500vh 0px 0px rgba(0,0,0,0);
 
   /*Transition properties*/
   transition-property: box-shadow, color;
@@ -81,12 +83,12 @@ article a{
 }
 /*Article animation*/
 article a:hover{
-  box-shadow: inset 0px -100vh 0px 0px rgba(0,0,0,0.8);
+  box-shadow: inset 0px -500vh 0px 0px rgba(0,0,0,0.8);
   color: rgba(255, 255, 255, 1);
 }
 .article-title{
   font-size: 4rem;
-  z-index: 2;
+  z-index: 4;
 }
 /*Footer*/
 footer{
@@ -96,7 +98,83 @@ footer{
   font-weight: 400;
   font-size: 1rem;
 }
+/*Side menu options*/
+.toggle{
+  display: none;
+  z-index: 2;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: black;
+  font-size: 30px;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.cross{
+  display: none;
+  z-index: 4;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+.page{
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+.side-menu{
+  display: none;
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  left: -100vw;
+  bottom: 0px;
+  width: 100vw;
+  background-color: #333;
+}
+/*Side menu link styes*/
+.side-menu nav{
+  padding: 26px;
+}
+.side-menu nav li{
+  text-align: center;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.side-menu nav li a{
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s linear;
+}
+.side-menu nav li a:hover{
+  color: rgba(255, 255, 255, 1);
+}
+#sidebartoggler{
+  display: none;
+}
+#sidebartoggler:checked + .wraper .side-menu{
+  left: 0vw;
+}
+#sidebartoggler:checked + .wraper .side-menu .cross{
+  display: block;
+}
+/*Media options*/
 @media (max-width: $toast-breakpoint-small){
+  .toggle{
+    display: block;
+  }
+  .side-menu{
+    display: block;
+  }
+  header nav{
+    display: none;
+  }
   header{
     text-align: center;
   }
