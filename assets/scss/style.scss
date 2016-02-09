@@ -179,3 +179,8 @@ footer{
     text-align: center;
   }
 }
+@media (max-width: $toast-breakpoint-medium) and (min-width: $toast-breakpoint-small) {
+  header{
+    padding: 0 20px;
+  }
+}
