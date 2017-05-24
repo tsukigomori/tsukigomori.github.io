@@ -46,7 +46,7 @@ body {
 header{
   display: -webkit-flex;
   display: flex;
-  background-color: red;
+  background-color: #cc151a;
   -webkit-flex-direction: row;
   flex-direction: row;
 }
@@ -76,8 +76,8 @@ section{
   flex-grow: 1;
 }
 .domena{
-  border-left: 1px solid red;
-  border-bottom: 1px solid red;
+  border-left: 1px solid #cc151a;
+  border-bottom: 1px solid #cc151a;
   min-height: 400px;
   flex-grow: 1;
 }
