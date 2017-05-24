@@ -64,9 +64,14 @@ header{
   flex-grow: 1;
   align-items: center;
   justify-content: flex-end;
+  font-size: 26px;
 }
 .lang a{
   padding: 20px;
+}
+.lang a:hover{
+  transition: color 1s ease;
+  color: #ea989f;
 }
 section{
   display: -webkit-flex;
