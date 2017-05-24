@@ -44,12 +44,30 @@ body {
   flex-direction: column;
 }
 header{
+  display: -webkit-flex;
+  display: flex;
   background-color: red;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 .logo{
+  display: -webkit-flex;
+  display: flex;
+  padding: 20px;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.lang{
+  color: white;
+  display: -webkit-flex;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.lang a{
   padding: 20px;
 }
-
 section{
   display: -webkit-flex;
   display: flex;
