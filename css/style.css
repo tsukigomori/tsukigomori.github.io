@@ -71,7 +71,7 @@ header{
 }
 .lang a:hover{
   transition: color 1s ease;
-  color: #ea989f;
+  color: #ea1b2a;
 }
 section{
   display: -webkit-flex;
