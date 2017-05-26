@@ -49,6 +49,7 @@ header{
   background-color: #cc151a;
   -webkit-flex-direction: row;
   flex-direction: row;
+  align-items: center;
 }
 .logo{
   display: -webkit-flex;
@@ -56,6 +57,22 @@ header{
   padding: 20px;
   -webkit-align-items: center;
   align-items: center;
+}
+header .przycisk{
+  padding: 20px;
+  color: #cc151a;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+header .przycisk:hover{
+  padding: 20px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  transition: color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .lang{
   color: white;
