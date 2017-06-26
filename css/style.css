@@ -23,6 +23,10 @@ header{
   align-items: center;
   justify-content: space-between;
 }
+header nav{
+  display: flex;
+  align-items: center;
+}
 header a{
   padding: 20px;
   color: white;
@@ -31,20 +35,8 @@ header a:hover{
   transition: all 0.3s ease;
   color: #8a2927;
 }
-header nav{
-  flex-grow: 1;
-}
-.lang{
-  flex-grow: 1;
-}
-header .logtype{
-  flex-grow: 1;
-}
-header .logo{
-  padding: 20px;
-}
-header .logo img{
-  height: 80px;
+header nav img{
+  margin: 20px;
 }
 section{
   display: -webkit-flex;
