@@ -30,13 +30,12 @@ header nav{
 header a{
   padding: 20px;
   color: white;
+  fill: white;
 }
 header a:hover{
   transition: all 0.3s ease;
   color: #8a2927;
-}
-header nav img{
-  margin: 20px;
+  fill: #8a2927;
 }
 section{
   display: -webkit-flex;
