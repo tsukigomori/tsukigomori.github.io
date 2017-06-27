@@ -45,6 +45,10 @@ section{
   flex-grow: 1;
 }
 .domena{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-left: 1px solid #cc151a;
   border-bottom: 1px solid #cc151a;
   flex-grow: 1;
