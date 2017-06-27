@@ -1,9 +1,47 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css*/
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size:100%;
+  font-weight:normal;
+}
+ul{
+  list-style:none;
+}
+button,input,select,textarea{
+  margin:0;
+}
+html{
+  box-sizing:border-box;
+}
+*,*:before,*:after{
+  box-sizing:inherit;
+}
+
+iframe{
+  border:0;
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+td,th{
+  padding:0;
+  text-align:left;
+}
+a:link, a:active, a:visited, a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+
 html, body {
   height: 100%;
 }
-/*------- BODY ------ */
+/*------- BODY ------- */
 body {
   display: -webkit-flex;
   display: flex;
@@ -37,6 +75,7 @@ header a:hover{
   color: #8a2927;
   fill: #8a2927;
 }
+/*------- DOMENY -------*/
 section{
   display: -webkit-flex;
   display: flex;
@@ -48,9 +87,27 @@ section{
 .domena{
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-left: 1px solid #cc151a;
   border-bottom: 1px solid #cc151a;
   width: 20%;
+}
+.domena a{
+  color: rgba(204, 21, 26, 1);
+  background-color: rgba(204, 21, 26, 0);
+  padding: 10px 30px;
+  margin-top: 20px;
+  border: 2px solid rgba(204, 21, 26, 1);
+  border-radius: 4px;
+}
+.domena a:hover{
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(204, 21, 26, 1);
+  border: 2px solid rgba(204, 21, 26, 0);
+}
+.dom1{
+
 }
