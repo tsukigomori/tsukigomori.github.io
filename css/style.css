@@ -47,7 +47,8 @@ body {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: Roboto, "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
   line-height: 1.5;
   color: white;
 }
@@ -69,6 +70,7 @@ header a{
   padding: 20px;
   color: white;
   fill: white;
+
 }
 header a:hover{
   transition: all 0.3s ease;
@@ -109,5 +111,27 @@ section{
   border: 2px solid rgba(204, 21, 26, 0);
 }
 .dom1{
-
+  background-image: url(img/bg/sztandary.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.dom2{
+  background-image: url(img/bg/atelier.jpg);
+  background-position: left center;
+  background-size: cover;
+}
+.dom3{
+  background-image: url(img/bg/apliq.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.dom4{
+  background-image: url(img/bg/ds.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.dom5{
+  background-image: url(img/bg/haftina.jpg);
+  background-position: right center;
+  background-size: cover;
 }
