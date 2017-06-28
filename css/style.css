@@ -115,6 +115,19 @@ section{
   background-color: rgba(204, 21, 26, 1);
   border: 2px solid rgba(204, 21, 26, 0);
 }
+.domena p{
+  font-weight: 500;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(204, 21, 26, 1);
+  background-color: rgba(204, 21, 26, 0);
+  margin: 20px 10px 0;
+  border: 2px solid rgba(204, 21, 26, 1);
+  border-radius: 4px;
+  padding: 10px;
+}
 .linki{
   display: -webkit-flex;
   display: flex;
