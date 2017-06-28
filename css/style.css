@@ -96,6 +96,7 @@ section{
   width: 20%;
 }
 .domena a{
+  font-weight: 500;
   display: -webkit-flex;
   display: flex;
   align-items: center;
