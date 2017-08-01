@@ -175,8 +175,7 @@ section{
   background-position: center center;
 }
 @media only screen
-  and (max-device-width: 768px)
-  or (max-width: 768px) {
+  and (max-width: 768px) {
     section{
       display: -webkit-flex;
       display: flex;
