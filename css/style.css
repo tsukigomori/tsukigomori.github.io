@@ -174,19 +174,14 @@ section{
   background-image: url(img/white_cart.png);
   background-position: center center;
 }
-
-.top {
-	margin-top: 10%;
-}
-
-.left {
-	margin-left: 20px;
-}
-
-.left a{
-	padding-right: 30px;
-}
-
-.right {
-	margin-right: 20px;
+@media only screen
+  and (max-device-width: 768px) {
+    section{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: stretch;
+    }
 }
