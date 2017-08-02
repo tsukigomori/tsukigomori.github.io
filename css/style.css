@@ -225,6 +225,7 @@ section{
     .domena img{
       max-height: 100%;
       max-width: 70%;
+      min-width: 50%;
       margin: 30px;
     }
     .linki{
