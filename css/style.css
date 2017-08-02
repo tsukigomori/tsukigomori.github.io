@@ -95,6 +95,10 @@ section{
   border-bottom: 1px dashed #cc151a;
   width: 20%;
 }
+.domena img{
+  height: 80px;
+  width: 90%;
+}
 .domena a{
   font-weight: 500;
   display: -webkit-flex;
@@ -164,19 +168,19 @@ section{
   background-position: right center;
   background-size: cover;
 }
-
-.ikona {
-  background-image: url(img/red_cart.png);
-  background-position: center center;
+.left {
+	margin-left: 20px;
 }
 
-.ikona img:hover {
-  background-image: url(img/white_cart.png);
-  background-position: center center;
+.left a{
+	padding-right: 30px;
+}
+
+.right {
+	margin-right: 20px;
 }
 @media only screen
-  and (max-width: 768px)
-  or (max-device-width: 768px) {
+  and (max-width: 768px){
     section{
       display: -webkit-flex;
       display: flex;
@@ -186,9 +190,41 @@ section{
     .domena{
       display: -webkit-flex;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      align-items: row;
       justify-content: center;
       width: 100%;
+    }
+    .domena .linki{
+      margin: 30px;
+    }
+    .domena img{
+      height: auto;
+      width: 70%;
+      margin: 30px;
+    }
+}@media only screen
+  and (max-device-width: 768px){
+    section{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .domena{
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      align-items: row;
+      justify-content: center;
+      width: 100%;
+    }
+    .domena .linki{
+      margin: 30px;
+    }
+    .domena img{
+      height: auto;
+      width: 70%;
+      margin: 30px;
     }
 }
