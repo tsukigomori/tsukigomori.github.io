@@ -199,11 +199,26 @@ section{
       margin: 30px;
     }
     .domena img{
-      height: auto;
-      width: 70%;
+      max-height: 100%;
+      max-width: 70%;
+      min-width: 50%;
       margin: 30px;
     }
-}@media only screen
+    .linki{
+      font-size: 20px;
+      margin-top: 20px;
+      display: -webkit-flex;
+      display: flex;
+    }
+    .domena p{
+      height: 40px;
+      width: 50px;
+      padding: 0px;
+      margin: inherit;
+    }
+  }
+}
+@media only screen
   and (max-device-width: 768px){
     section{
       display: -webkit-flex;
@@ -235,7 +250,9 @@ section{
       display: flex;
     }
     .domena p{
-      padding: 20px;
+      height: 40px;
+      width: 50px;
+      padding: 0px;
       margin: inherit;
     }
 }
