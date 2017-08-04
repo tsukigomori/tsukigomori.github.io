@@ -201,7 +201,7 @@ section{
       max-height: 100%;
       max-width: 70%;
       min-width: 50%;
-      margin: 30px;
+      padding: 2px;
     }
     .linki{
       font-size: 20px;
@@ -238,7 +238,7 @@ section{
       max-height: 100%;
       max-width: 70%;
       min-width: 50%;
-      margin: 30px;
+      padding: 2px;
     }
     .linki{
       font-size: 20px;
