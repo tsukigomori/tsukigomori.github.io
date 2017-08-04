@@ -136,10 +136,6 @@ section{
   background-color: rgba(204, 21, 26, 0);
   border: 2px dashed rgba(204, 21, 26, 1);
 }
-.domena img{
-  height: 80px;
-  width: 90%;
-}
 .linki{
 	margin-top: 20px;
   display: -webkit-flex;
