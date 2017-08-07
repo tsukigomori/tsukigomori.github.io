@@ -177,43 +177,7 @@ section{
 .right {
 	margin-right: 20px;
 }
-@media only screen
-  and (max-width: 1024px){
-    section{
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-    .domena{
-      display: -webkit-flex;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      flex-grow: 1;
-    }
-    .domena .linki{
-      margin: 30px;
-    }
-    .domena img{
-      height: auto;
-      width: auto;
-      min-width: 50%;
-      margin: 20px;
-    }
-    .linki{
-      font-size: 20px;
-      margin-top: 20px;
-      display: -webkit-flex;
-      display: flex;
-    }
-    .domena p{
-      font-size: 12px;
-      text-align: center;
-    }
-  }
+
 @media only screen
   and (max-device-width: 1024px){
     section{
